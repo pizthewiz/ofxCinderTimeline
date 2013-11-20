@@ -101,3 +101,8 @@ Desktop.ini
 *.log
 *.sql
 *.sqlite
+
+#########################
+# CUSTOM
+#########################
+libs/boost

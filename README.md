@@ -23,4 +23,4 @@ timeline().apply( &radius, 3.0f, 1.0f ).appendTo( &pos );
 See the included source example _example-BasicTween_, the [RFC: Timeline (+ Boost 1.48)](http://forum.libcinder.org/topic/rfc-timeline-boost-1-48) forum thread and the [documentation](http://libcinder.org/docs/v0.8.4/classcinder_1_1_timeline.html) from the Cinder library for more detail.
 
 ## Notes
-The `ofxCinderTimeline` addon requires that `ofxCinderTimeline/libs/boost` and `ofxCinderTimeline/libs/cinder/include` are included in the header search path.
+`Timeline` requires [Boost](http://boost.org), download the [1.48 sources](http://sourceforge.net/projects/boost/files/boost/1.48.0/) unarchive and move the resulting `boost_1_48_0/boost` into `ofxCinderTimeline/libs`. The `ofxCinderTimeline` addon requires that `ofxCinderTimeline/libs` and `ofxCinderTimeline/libs/cinder/include` are included in the header search path.
