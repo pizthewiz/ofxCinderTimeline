@@ -29,8 +29,7 @@ common:
 	# include search paths, this will be usually parsed from the file system
 	# but if the addon or addon libraries need special search paths they can be
 	# specified here separated by spaces or one per line using +=
-	ADDON_INCLUDES = libs/
-	ADDON_INCLUDES += libs/cinder/include
+	ADDON_INCLUDES = libs/cinder/include
 	
 	# any special flag that should be passed to the compiler when using this
 	# addon
@@ -63,11 +62,11 @@ common:
 	
 	# when parsing the file system looking for sources exclude this for all or
 	# a specific platform
-	# ADDON_SOURCES_EXCLUDE = 
+	ADDON_SOURCES_EXCLUDE = libs/boost/%
 	
 	# when parsing the file system looking for include paths exclude this for all or
 	# a specific platform
-	# ADDON_INCLUDES_EXCLUDE =
+	ADDON_INCLUDES_EXCLUDE = libs/boost/%
 	
 linux64:
 	
