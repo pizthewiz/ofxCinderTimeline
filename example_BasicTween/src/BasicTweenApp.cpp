@@ -13,15 +13,15 @@ void BasicTweenApp::update() {
 
 void BasicTweenApp::draw() {
     ofSetColor(ofColor::black);
-	ofFill();
-	ofCircle(mBlackPos, 20.0f);
+    ofFill();
+    ofCircle(mBlackPos, 20.0f);
 
     ofSetColor(ofColor::white);
-	ofFill();
-	ofCircle(mWhitePos, 16.0f);
+    ofFill();
+    ofCircle(mWhitePos, 16.0f);
 }
 
 void BasicTweenApp::mousePressed(int x, int y, int button) {
-	timeline().apply(&mBlackPos, ofPoint(x, y), 2.0f, ofxCinderTimeline::EaseInOutCubic());
-	timeline().apply(&mWhitePos, ofPoint(x, y), 0.35f, ofxCinderTimeline::EaseOutQuint()).appendTo(&mBlackPos);
+    timeline().apply(&mBlackPos, ofPoint(x, y), 2.0f, ofxCinderTimeline::EaseInOutCubic());
+    timeline().apply(&mWhitePos, ofPoint(x, y), 0.35f, ofxCinderTimeline::EaseOutQuint()).appendTo(&mBlackPos);
 }
