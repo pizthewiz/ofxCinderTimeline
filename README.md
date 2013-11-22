@@ -14,6 +14,7 @@ timeline().apply(&radius, 3.0f, 5.0f).appendTo(&pos);
 _Callbacks_ - After a 4 second delay, animate `alpha` to 0.0 in 2 seconds using the default linear easing. When complete, the callback method `fadeOutFinished` will be run.
 ```C++
 ofxCinderTimeline::Anim<float> alpha;
+alpha = 1.0f;
 timeline().appendTo(&alpha, 0.0f, 2.0f).delay(4.0f).finishFn(boost::bind(&ofApp::fadeOutFinished, this));
 ```
 
