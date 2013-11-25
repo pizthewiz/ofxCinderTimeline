@@ -63,11 +63,11 @@ common:
 	
 	# when parsing the file system looking for sources exclude this for all or
 	# a specific platform
-	ADDON_SOURCES_EXCLUDE = libs/boost
+	ADDON_SOURCES_EXCLUDE = libs/boost/%
 	
 	# when parsing the file system looking for include paths exclude this for all or
 	# a specific platform
-	ADDON_INCLUDES_EXCLUDE = libs/boost
+	ADDON_INCLUDES_EXCLUDE = libs/boost/%
 	
 linux64:
 	
