@@ -66,7 +66,9 @@ using boost::uint64_t;
 
 #if defined( _MSC_VER ) && ( _MSC_VER >= 1600 )
 	#include <memory>
-#elif defined( CINDER_COCOA )
+// avoid conflict with existing openFrameworks import of shared_ptr, weak_ptr and enable_shared_from_this
+//  https://github.com/openframeworks/openFrameworks/blob/0.8.0/libs/openFrameworks/types/ofTypes.h#L12-16
+#elif defined( CINDER_COCOA ) || ( __cplusplus < 201103L )
 	#include <tr1/memory>
 	namespace std {
 		using std::tr1::shared_ptr;
